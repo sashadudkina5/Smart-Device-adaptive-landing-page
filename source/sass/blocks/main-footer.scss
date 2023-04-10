@@ -1,0 +1,29 @@
+.main-footer {
+  width: 100%;
+  background-color: $main-theme-color;
+}
+
+.main-footer__container {
+  display: flex;
+  width: 100%;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 50px;
+  padding-bottom: 55px;
+
+  @media (max-width: $vp-1023) {
+    flex-direction: column;
+    padding-left: 50px;
+    padding-right: 45px;
+    padding-bottom: 65px;
+    row-gap: 35px;
+  }
+}
+
+.main-footer__social {
+  margin-right: 160px;
+
+  @media (max-width: $vp-1023) {
+    margin-right: 0;
+  }
+}

@@ -1,0 +1,40 @@
+.social__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  column-gap: 15px;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+
+  @media (max-width: $vp-1023) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (max-width: $vp-767) {
+    flex-direction: column;
+    row-gap: 15px;
+  }
+}
+
+.social__link {
+  display: block;
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+
+  &:hover .social__icon,
+  &:focus .social__icon {
+    opacity: 0.7;
+  }
+
+  &:active .social__icon {
+    opacity: 0.3;
+  }
+}

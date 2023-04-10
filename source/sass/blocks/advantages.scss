@@ -1,0 +1,128 @@
+.advantages {
+  padding-top: 120px;
+  padding-bottom: 120px;
+
+  @media (max-width: $vp-1023) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  @media (max-width: $vp-767) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+.advantages__list {
+  max-width: 1222px;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  column-gap: 30px;
+  row-gap: 30px;
+  margin: 0 auto;
+  justify-content: center;
+
+  @media (max-width: $vp-1023) {
+    max-width: 670px;
+  }
+
+  @media (max-width: $vp-767) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+.advantages__item {
+  width: 595px;
+  padding: 95px 45px 35px 45px;
+  border: 1px solid $border-color;
+  min-height: 300px;
+  border-left: 5px solid $decoration-color;
+  background-repeat: no-repeat;
+  background-position: 45px 40px;
+
+  @media (max-width: $vp-1023) {
+    max-width: 320px;
+    padding: 95px 30px 35px 45px;
+  }
+
+  @media (max-width: $vp-767) {
+    max-width: 270px;
+    padding: 80px 30px 35px 30px;
+    background-position: 30px 30px;
+  }
+
+  &:hover {
+    background-color: $decoration-color;
+
+    .advantages__title,
+    .advantages__description {
+      color: $hover-text-color;
+    }
+  }
+
+  &--price {
+    background-image: url("../../img/svg/advantages-price.svg");
+
+    &:hover {
+      background-image: url("../../img/svg/advantages-price-hover.svg");
+    }
+  }
+
+  &--confidential {
+    background-image: url("../../img/svg/advantages-confidential.svg");
+
+    &:hover {
+      background-image: url("../../img/svg/advantages-confidential-hover.svg");
+    }
+  }
+
+  &--people {
+    background-image: url("../../img/svg/advantages-people.svg");
+
+    &:hover {
+      background-image: url("../../img/svg/advantages-people-hover.svg");
+    }
+  }
+
+  &--time {
+    background-image: url("../../img/svg/advantages-time.svg");
+
+    &:hover {
+      background-image: url("../../img/svg/advantages-time-hover.svg");
+    }
+  }
+}
+
+.advantages__title {
+  margin: 0;
+  margin-bottom: 15px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  color: $decoration-color;
+
+  @media (max-width: $vp-1023) {
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+  @media (max-width: $vp-767) {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+.advantages__description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: $main-theme-color;
+
+  @media (max-width: $vp-767) {
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
