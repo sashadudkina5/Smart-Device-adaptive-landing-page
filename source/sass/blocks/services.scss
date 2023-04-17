@@ -47,13 +47,16 @@
 .services__list {
   list-style: none;
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   column-gap: 85px;
   row-gap: 30px;
   justify-content: center;
   margin: 0;
   padding: 0;
+
+  @media (max-width: 1430px) {
+    flex-wrap: wrap;
+  }
 }
 
 .services__container {
@@ -122,11 +125,12 @@
   background-size: cover;
   position: relative;
   background-image: none;
+  width: 100%;
 
   &--production {
     background-image: url("../../img/production-desktop.jpg");
 
-    @media (min-resolution: $retina-dppx) {
+    @media (min-resolution: $retina-dppx) and (min-width: $vp-1024) {
       background-image: url("../../img/production-desktop@2x.jpg");
     }
   }
@@ -134,7 +138,7 @@
   &--montage {
     background-image: url("../../img/montage-desktop.jpg");
 
-    @media (min-resolution: $retina-dppx) {
+    @media (min-resolution: $retina-dppx) and (min-width: $vp-1024) {
       background-image: url("../../img/montage-desktop@2x.jpg");
     }
   }
@@ -142,7 +146,8 @@
   &--lights {
     background-image: url("../../img/lights-desktop.jpg");
 
-    @media (min-resolution: $retina-dppx) {
+
+    @media (min-resolution: $retina-dppx) and (min-width: $vp-1024) {
       background-image: url("../../img/lights-desktop@2x.jpg");
     }
   }
@@ -151,7 +156,7 @@
     &--production {
       background-image: url("../../img/production-tablet.jpg");
 
-      @media (min-resolution: $retina-dppx) {
+      @media (min-resolution: $retina-dppx) and (max-width: $vp-1023) {
         background-image: url("../../img/production-tablet@2x.jpg");
       }
     }
@@ -159,7 +164,7 @@
     &--montage {
       background-image: url("../../img/montage-tablet.jpg");
 
-      @media (min-resolution: $retina-dppx) {
+      @media (min-resolution: $retina-dppx) and (max-width: $vp-1023) {
         background-image: url("../../img/montage-tablet@2x.jpg");
       }
     }
@@ -167,7 +172,7 @@
     &--lights {
       background-image: url("../../img/lights-tablet.jpg");
 
-      @media (min-resolution: $retina-dppx) {
+      @media (min-resolution: $retina-dppx) and (max-width: $vp-1023) {
         background-image: url("../../img/lights-tablet@2x.jpg");
       }
     }
@@ -177,7 +182,7 @@
     &--production {
       background-image: url("../../img/production-mobile.jpg");
 
-      @media (min-resolution: $retina-dppx) {
+      @media (min-resolution: $retina-dppx) and (max-width: $vp-767) {
         background-image: url("../../img/production-mobile@2x.jpg");
       }
     }
@@ -185,7 +190,7 @@
     &--montage {
       background-image: url("../../img/montage-mobile.jpg");
 
-      @media (min-resolution: $retina-dppx) {
+      @media (min-resolution: $retina-dppx) and (max-width: $vp-767) {
         background-image: url("../../img/montage-mobile@2x.jpg");
       }
     }
@@ -193,7 +198,7 @@
     &--lights {
       background-image: url("../../img/lights-mobile.jpg");
 
-      @media (min-resolution: $retina-dppx) {
+      @media (min-resolution: $retina-dppx) and (max-width: $vp-767) {
         background-image: url("../../img/lights-mobile@2x.jpg");
       }
     }

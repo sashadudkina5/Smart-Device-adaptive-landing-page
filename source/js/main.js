@@ -3,7 +3,7 @@ import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {leadToForm} from './modules/request-call-button';
 import {moreInfoToggle} from './modules/about-bottons';
-import {handleNavigationClick} from './modules/footer-mobile-nav';
+import {handleNavigationClick, deleteActiveList} from './modules/footer-mobile-nav';
 import {openModal} from './modules/modal';
 
 // ---------------------------------
