@@ -30,7 +30,7 @@
   width: 500px;
 }
 
-.modal__form {
+.modal__content form {
   display: flex;
   flex-direction: column;
   row-gap: 20px;
@@ -54,7 +54,8 @@
   line-height: 22px;
 }
 
-.modal__input {
+.modal__label label input,
+.modal__label label textarea {
   background-color: $form-background;
   border-radius: 3px;
   border: none;
@@ -77,10 +78,6 @@
   &::placeholder {
     color: $color-default-white;
   }
-
-  &--policy[type="checkbox"]:checked + .modal__check {
-    background-image: url("../../img/svg/check.svg");
-  }
 }
 
 .modal__check {
@@ -95,30 +92,30 @@
   background-position: 50% 50%;
 }
 
-.modal__label {
-  &--question {
-    .modal__input {
-      height: 155px;
-    }
-  }
+.modal__label--question textarea {
+  height: 155px;
+}
 
-  &--policy {
-    display: flex;
-    padding-left: 26px;
-    position: relative;
+.modal__label--policy {
+  display: flex;
+  padding-left: 26px;
+  position: relative;
 
-    &::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 50%;
-      margin-top: -7px;
-      width: 15px;
-      height: 14px;
-      border: solid 1px $color-default-white;
-      border-radius: 2px;
-    }
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -7px;
+    width: 15px;
+    height: 14px;
+    border: solid 1px $color-default-white;
+    border-radius: 2px;
   }
+}
+
+.modal__label--policy input[type="checkbox"]:checked + .modal__check {
+  background-image: url("../../img/svg/check.svg");
 }
 
 .modal__send {

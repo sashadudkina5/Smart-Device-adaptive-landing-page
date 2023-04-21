@@ -84,7 +84,8 @@
   }
 }
 
-.form__input {
+.form__label label input,
+.form__label label textarea {
   background-color: $form-background;
   border-radius: 3px;
   border: none;
@@ -107,17 +108,13 @@
   &::placeholder {
     color: $color-default-white;
   }
-
-  &--policy[type="checkbox"]:checked + .form__check {
-    background-image: url("../../img/svg/check.svg");
-  }
 }
 
 .form__check {
   display: block;
   position: absolute;
   left: 0;
-  top: 65%;
+  top: 55%;
   margin-top: -7px;
   width: 15px;
   height: 14px;
@@ -125,35 +122,37 @@
   background-position: 50% 50%;
 }
 
-.form__label {
-  &--question {
-    grid-column-start: 1;
-    grid-column-end: 3;
+.form__label--question {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
 
-    .form__input {
-      height: 155px;
-    }
-  }
+.form__label--question label textarea {
+  height: 155px;
+}
 
-  &--policy {
-    display: flex;
-    padding-left: 26px;
-    position: relative;
 
-    &::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 65%;
-      margin-top: -7px;
-      width: 15px;
-      height: 14px;
-      border: solid 1px $color-default-white;
-      border-radius: 2px;
-    }
+.form__label--policy {
+  display: flex;
+  padding-left: 26px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 55%;
+    margin-top: -7px;
+    width: 15px;
+    height: 14px;
+    border: solid 1px $color-default-white;
+    border-radius: 2px;
   }
 }
 
+.form__label--policy input[type="checkbox"]:checked + .form__check {
+  background-image: url("../../img/svg/check.svg");
+}
 
 .form__send {
   background-color: $button-color;

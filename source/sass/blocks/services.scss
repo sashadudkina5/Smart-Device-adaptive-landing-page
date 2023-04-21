@@ -121,88 +121,15 @@
   }
 }
 
+.services__image {
+  object-fit: cover;
+}
+
 .services__item {
   background-size: cover;
   position: relative;
   background-image: none;
   width: 100%;
-
-  &--production {
-    background-image: url("../../img/production-desktop.jpg");
-
-    @media (min-resolution: $retina-dppx) and (min-width: $vp-1024) {
-      background-image: url("../../img/production-desktop@2x.jpg");
-    }
-  }
-
-  &--montage {
-    background-image: url("../../img/montage-desktop.jpg");
-
-    @media (min-resolution: $retina-dppx) and (min-width: $vp-1024) {
-      background-image: url("../../img/montage-desktop@2x.jpg");
-    }
-  }
-
-  &--lights {
-    background-image: url("../../img/lights-desktop.jpg");
-
-
-    @media (min-resolution: $retina-dppx) and (min-width: $vp-1024) {
-      background-image: url("../../img/lights-desktop@2x.jpg");
-    }
-  }
-
-  @media (max-width: $vp-1023) {
-    &--production {
-      background-image: url("../../img/production-tablet.jpg");
-
-      @media (min-resolution: $retina-dppx) and (max-width: $vp-1023) {
-        background-image: url("../../img/production-tablet@2x.jpg");
-      }
-    }
-
-    &--montage {
-      background-image: url("../../img/montage-tablet.jpg");
-
-      @media (min-resolution: $retina-dppx) and (max-width: $vp-1023) {
-        background-image: url("../../img/montage-tablet@2x.jpg");
-      }
-    }
-
-    &--lights {
-      background-image: url("../../img/lights-tablet.jpg");
-
-      @media (min-resolution: $retina-dppx) and (max-width: $vp-1023) {
-        background-image: url("../../img/lights-tablet@2x.jpg");
-      }
-    }
-  }
-
-  @media (max-width: $vp-767) {
-    &--production {
-      background-image: url("../../img/production-mobile.jpg");
-
-      @media (min-resolution: $retina-dppx) and (max-width: $vp-767) {
-        background-image: url("../../img/production-mobile@2x.jpg");
-      }
-    }
-
-    &--montage {
-      background-image: url("../../img/montage-mobile.jpg");
-
-      @media (min-resolution: $retina-dppx) and (max-width: $vp-767) {
-        background-image: url("../../img/montage-mobile@2x.jpg");
-      }
-    }
-
-    &--lights {
-      background-image: url("../../img/lights-mobile.jpg");
-
-      @media (min-resolution: $retina-dppx) and (max-width: $vp-767) {
-        background-image: url("../../img/lights-mobile@2x.jpg");
-      }
-    }
-  }
 
 
   &::after {

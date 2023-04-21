@@ -732,7 +732,7 @@ button,
   width: 500px;
 }
 
-.modal__form {
+.modal__content form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -761,7 +761,8 @@ button,
   line-height: 22px;
 }
 
-.modal__input {
+.modal__label label input,
+.modal__label label textarea {
   background-color: rgba(4, 20, 39, 0.15);
   border-radius: 3px;
   border: none;
@@ -774,36 +775,39 @@ button,
   width: 100%;
 }
 
-.modal__input:hover {
+.modal__label label input:hover,
+.modal__label label textarea:hover {
   outline: 1px solid #0b5778;
 }
 
-.modal__input:focus {
+.modal__label label input:focus,
+.modal__label label textarea:focus {
   outline: 1px solid #041827;
 }
 
-.modal__input::-webkit-input-placeholder {
+.modal__label label input::-webkit-input-placeholder,
+.modal__label label textarea::-webkit-input-placeholder {
   color: #ffffff;
 }
 
-.modal__input::-moz-placeholder {
+.modal__label label input::-moz-placeholder,
+.modal__label label textarea::-moz-placeholder {
   color: #ffffff;
 }
 
-.modal__input:-ms-input-placeholder {
+.modal__label label input:-ms-input-placeholder,
+.modal__label label textarea:-ms-input-placeholder {
   color: #ffffff;
 }
 
-.modal__input::-ms-input-placeholder {
+.modal__label label input::-ms-input-placeholder,
+.modal__label label textarea::-ms-input-placeholder {
   color: #ffffff;
 }
 
-.modal__input::placeholder {
+.modal__label label input::placeholder,
+.modal__label label textarea::placeholder {
   color: #ffffff;
-}
-
-.modal__input--policy[type=checkbox]:checked + .modal__check {
-  background-image: url("../../img/svg/check.svg");
 }
 
 .modal__check {
@@ -818,7 +822,7 @@ button,
   background-position: 50% 50%;
 }
 
-.modal__label--question .modal__input {
+.modal__label--question textarea {
   height: 155px;
 }
 
@@ -840,6 +844,10 @@ button,
   height: 14px;
   border: solid 1px #ffffff;
   border-radius: 2px;
+}
+
+.modal__label--policy input[type=checkbox]:checked + .modal__check {
+  background-image: url("../../img/svg/check.svg");
 }
 
 .modal__send {
@@ -1647,6 +1655,7 @@ button,
 .promo {
   width: 100%;
   background-image: url("../../img/promo-background.jpg");
+  background-color: #041827;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
@@ -1954,23 +1963,16 @@ button,
   padding-left: 40px;
 }
 
+.services__image {
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
 .services__item {
   background-size: cover;
   position: relative;
   background-image: none;
   width: 100%;
-}
-
-.services__item--production {
-  background-image: url("../../img/production-desktop.jpg");
-}
-
-.services__item--montage {
-  background-image: url("../../img/montage-desktop.jpg");
-}
-
-.services__item--lights {
-  background-image: url("../../img/lights-desktop.jpg");
 }
 
 .services__item::after {
@@ -2047,7 +2049,8 @@ button,
   row-gap: 20px;
 }
 
-.form__input {
+.form__label label input,
+.form__label label textarea {
   background-color: rgba(4, 20, 39, 0.15);
   border-radius: 3px;
   border: none;
@@ -2060,43 +2063,46 @@ button,
   width: 100%;
 }
 
-.form__input:hover {
+.form__label label input:hover,
+.form__label label textarea:hover {
   outline: 1px solid #0b5778;
 }
 
-.form__input:focus {
+.form__label label input:focus,
+.form__label label textarea:focus {
   outline: 1px solid #041827;
 }
 
-.form__input::-webkit-input-placeholder {
+.form__label label input::-webkit-input-placeholder,
+.form__label label textarea::-webkit-input-placeholder {
   color: #ffffff;
 }
 
-.form__input::-moz-placeholder {
+.form__label label input::-moz-placeholder,
+.form__label label textarea::-moz-placeholder {
   color: #ffffff;
 }
 
-.form__input:-ms-input-placeholder {
+.form__label label input:-ms-input-placeholder,
+.form__label label textarea:-ms-input-placeholder {
   color: #ffffff;
 }
 
-.form__input::-ms-input-placeholder {
+.form__label label input::-ms-input-placeholder,
+.form__label label textarea::-ms-input-placeholder {
   color: #ffffff;
 }
 
-.form__input::placeholder {
+.form__label label input::placeholder,
+.form__label label textarea::placeholder {
   color: #ffffff;
-}
-
-.form__input--policy[type=checkbox]:checked + .form__check {
-  background-image: url("../../img/svg/check.svg");
 }
 
 .form__check {
   display: block;
   position: absolute;
   left: 0;
-  top: 65%;
+  top: 55%;
   margin-top: -7px;
   width: 15px;
   height: 14px;
@@ -2111,7 +2117,7 @@ button,
   grid-column-end: 3;
 }
 
-.form__label--question .form__input {
+.form__label--question label textarea {
   height: 155px;
 }
 
@@ -2127,12 +2133,16 @@ button,
   content: "";
   position: absolute;
   left: 0;
-  top: 65%;
+  top: 55%;
   margin-top: -7px;
   width: 15px;
   height: 14px;
   border: solid 1px #ffffff;
   border-radius: 2px;
+}
+
+.form__label--policy input[type=checkbox]:checked + .form__check {
+  background-image: url("../../img/svg/check.svg");
 }
 
 .form__send {
@@ -2219,20 +2229,6 @@ button,
 @media (min-width: 1024px) {
   .main-header {
     position: fixed;
-  }
-}
-
-@media (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 1024px), (-o-min-device-pixel-ratio: 3/2) and (min-width: 1024px), (min-resolution: 1.5dppx) and (min-width: 1024px) {
-  .services__item--production {
-    background-image: url("../../img/production-desktop@2x.jpg");
-  }
-
-  .services__item--montage {
-    background-image: url("../../img/montage-desktop@2x.jpg");
-  }
-
-  .services__item--lights {
-    background-image: url("../../img/lights-desktop@2x.jpg");
   }
 }
 
@@ -2412,18 +2408,6 @@ button,
     padding-left: 45px;
   }
 
-  .services__item--production {
-    background-image: url("../../img/production-tablet.jpg");
-  }
-
-  .services__item--montage {
-    background-image: url("../../img/montage-tablet.jpg");
-  }
-
-  .services__item--lights {
-    background-image: url("../../img/lights-tablet.jpg");
-  }
-
   .form {
     padding: 50px 50px 125px 50px;
     background-image: none;
@@ -2446,20 +2430,6 @@ button,
   .form__wrapper {
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 1023px), (max-width: 1023px) and (-o-min-device-pixel-ratio: 3/2) and (max-width: 1023px), (max-width: 1023px) and (min-resolution: 1.5dppx) and (max-width: 1023px) {
-  .services__item--production {
-    background-image: url("../../img/production-tablet@2x.jpg");
-  }
-
-  .services__item--montage {
-    background-image: url("../../img/montage-tablet@2x.jpg");
-  }
-
-  .services__item--lights {
-    background-image: url("../../img/lights-tablet@2x.jpg");
   }
 }
 
@@ -2686,18 +2656,6 @@ button,
     padding-left: 30px;
   }
 
-  .services__item--production {
-    background-image: url("../../img/production-mobile.jpg");
-  }
-
-  .services__item--montage {
-    background-image: url("../../img/montage-mobile.jpg");
-  }
-
-  .services__item--lights {
-    background-image: url("../../img/lights-mobile.jpg");
-  }
-
   .services__item::after {
     width: 40px;
     height: 40px;
@@ -2793,20 +2751,6 @@ button,
     -webkit-transform: translateY(calc(-50% - 5px));
     -ms-transform: translateY(calc(-50% - 5px));
     transform: translateY(calc(-50% - 5px));
-  }
-}
-
-@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 767px), (max-width: 767px) and (-o-min-device-pixel-ratio: 3/2) and (max-width: 767px), (max-width: 767px) and (min-resolution: 1.5dppx) and (max-width: 767px) {
-  .services__item--production {
-    background-image: url("../../img/production-mobile@2x.jpg");
-  }
-
-  .services__item--montage {
-    background-image: url("../../img/montage-mobile@2x.jpg");
-  }
-
-  .services__item--lights {
-    background-image: url("../../img/lights-mobile@2x.jpg");
   }
 }
 
