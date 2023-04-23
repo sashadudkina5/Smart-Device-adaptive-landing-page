@@ -1936,14 +1936,14 @@ button,
 }
 
 .services__service-title {
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
+  width: auto;
   color: #ffffff;
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
   font-family: "Roboto condensed", "Arial", sans-serif;
+  position: relative;
+  z-index: 10;
 }
 
 .services__link:hover .services__service-title,
@@ -1961,11 +1961,19 @@ button,
   min-height: 650px;
   padding-top: 50px;
   padding-left: 40px;
+  padding-right: 40px;
 }
 
 .services__image {
   -o-object-fit: cover;
   object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
 }
 
 .services__item {
@@ -1975,17 +1983,7 @@ button,
   width: 100%;
 }
 
-.services__item::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 60px;
-  height: 60px;
-  background-color: #00b2ff;
-}
-
-.services__item ::before {
+.services__item::before {
   content: "";
   position: absolute;
   right: 25px;
@@ -2000,6 +1998,17 @@ button,
   transform: rotate(-45deg);
   background-color: transparent;
   z-index: 2;
+}
+
+.services__item::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 60px;
+  height: 60px;
+  background-color: #00b2ff;
+  z-index: 1;
 }
 
 .form {
@@ -2656,16 +2665,16 @@ button,
     padding-left: 30px;
   }
 
-  .services__item::after {
-    width: 40px;
-    height: 40px;
-  }
-
-  .services__item ::before {
+  .services__item::before {
     right: 16px;
     bottom: 16px;
     width: 5px;
     height: 2px;
+  }
+
+  .services__item::after {
+    width: 40px;
+    height: 40px;
   }
 
   .form__title {
