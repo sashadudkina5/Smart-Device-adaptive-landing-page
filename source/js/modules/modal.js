@@ -16,9 +16,10 @@ const openModal = (modal) => {
   });
 };
 
+const toggleModal = () => {
+  requestCallButton.addEventListener('click', () => {
+    openModal(modalWindow);
+  });
+};
 
-requestCallButton.addEventListener('click', () => {
-  openModal(modalWindow);
-});
-
-export {openModal};
+export {toggleModal};

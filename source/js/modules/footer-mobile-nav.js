@@ -12,21 +12,21 @@ const hideLists = (containers, current) => {
 const handleNavigationClick = (containers) => {
   if (window.matchMedia('(max-width: 767px)').matches) {
     for (let i = 0; i < containers.length; i++) {
-      containers[i].addEventListener('click', function () {
-        hideLists(containers, this);
+      containers[i].addEventListener('click', (event) => {
+        const current = event.currentTarget;
+        hideLists(containers, current);
 
-        if (this.classList.contains('is-closed')) {
-          this.classList.add('is-active');
-          this.classList.remove('is-closed');
+        if (current.classList.contains('is-closed')) {
+          current.classList.add('is-active');
+          current.classList.remove('is-closed');
         } else {
-          this.classList.remove('is-active');
-          this.classList.add('is-closed');
+          current.classList.remove('is-active');
+          current.classList.add('is-closed');
         }
       });
     }
   }
 };
-
 
 handleNavigationClick(footerNavContainers);
 
