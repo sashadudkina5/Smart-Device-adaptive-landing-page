@@ -1,12 +1,12 @@
 .services {
   width: 100%;
   background-color: $main-theme-color;
-  padding-top: 70px;
+  padding-top: 105px;
   padding-bottom: 140px;
 
 
   @media (max-width: $vp-1023) {
-    padding-top: 60px;
+    padding-top: 55px;
     padding-bottom: 75px;
   }
 
@@ -25,6 +25,10 @@
   color: $color-default-white;
   margin-bottom: 50px;
 
+  @media (max-width: $vp-1023) {
+    margin-bottom: 40px;
+  }
+
   &--mobile {
     display: none;
   }
@@ -32,7 +36,7 @@
   @media (max-width: $vp-767) {
     font-size: 28px;
     line-height: 39px;
-    margin-bottom: 40px;
+    margin-bottom: 25px;
 
     &--desktop {
       display: none;
@@ -46,22 +50,24 @@
 
 .services__list {
   list-style: none;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   column-gap: 85px;
   row-gap: 30px;
   justify-content: center;
   margin: 0;
   padding: 0;
+  flex-wrap: wrap;
 
-  @media (max-width: 1430px) {
-    flex-wrap: wrap;
+  @media (max-width: 1400px) {
+    display: flex;
   }
 }
 
 .services__container {
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 350px;
+  padding-right: 350px;
   width: 100%;
   margin: 0 auto;
 
@@ -84,12 +90,13 @@
   line-height: 30px;
   font-family: $additional-font;
   position: relative;
-  z-index: 10;
+  z-index: 9;
 
 
   @media (max-width: $vp-767) {
     font-size: 18px;
     line-height: 30px;
+    max-width: 150px;
   }
 
   .services__link:hover &,
@@ -120,7 +127,7 @@
   @media (max-width: $vp-767) {
     min-width: 270px;
     min-height: 250px;
-    padding-top: 30px;
+    padding-top: 5px;
     padding-left: 30px;
   }
 }

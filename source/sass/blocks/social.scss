@@ -4,6 +4,10 @@
   list-style-type: none;
   display: flex;
   column-gap: 15px;
+
+  @media (max-width: $vp-767) {
+    margin-right: -10px;
+  }
 }
 
 .social {
@@ -20,6 +24,7 @@
   @media (max-width: $vp-767) {
     flex-direction: column;
     row-gap: 15px;
+    margin-bottom: 23px;
   }
 }
 

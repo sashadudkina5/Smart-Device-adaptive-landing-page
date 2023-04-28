@@ -60,6 +60,10 @@
   @media (max-width: 767px) {
     row-gap: 0;
     width: 100%;
+
+    &--contacts {
+      padding-left: 0;
+    }
   }
 
   @media (max-width: 1225px) {
@@ -69,6 +73,7 @@
 
     &--contacts {
       margin-left: 0;
+      padding-left: 15px;
     }
   }
 
@@ -116,8 +121,8 @@
   margin-bottom: 20px;
 
   @media (max-width: 767px) {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 22px;
+    padding-bottom: 22px;
     margin-bottom: 0;
     display: block;
   }

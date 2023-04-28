@@ -7,6 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Описание проекта">
   <title>Smart Device</title>
+  <link rel="preload" href="fonts/PTMono-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="/fonts/RobotoCondensed-Bold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="/fonts/RobotoCondensed-Regular.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -17,8 +20,9 @@
         <a class="main-header__logo" href="#">
           <span class="visually-hidden">Логотип Smart Device.</span>
           <picture>
-            <source media="(min-width: 768px)" srcset="img/svg/logo-desktop-tablet.svg">
-            <img class="main-header__logo" src="img/svg/logo-mobile.svg" alt="Логотип Smart Device.">
+            <source media="(min-width: 768px)" srcset="img/svg/logo-desktop-tablet.svg" width="215" height="55">
+            <img class="main-header__logo" src="img/svg/logo-mobile.svg" alt="Логотип Smart Device." width="35"
+              height="35">
           </picture>
         </a>
         <nav class="main-header__navigation navigation">
@@ -48,7 +52,7 @@
         <section class="promo">
           <div class="promo__container">
             <h1 class="promo__title">Печатные платы</h1>
-            <p class="promo__description">производство и монтаж, поставка комплектующих, блоков и модулей</p>
+            <p class="promo__description">производство и&nbsp;монтаж, поставка комплектующих, блоков и&nbsp;модулей</p>
             <button class="promo__request" type="button" data-action="request-call">
               <span class="promo__request-name promo__request-name--desktop">Получить бесплатную консультацию</span>
               <span class="promo__request-name promo__request-name--mobile">бесплатная консультация</span>
@@ -61,42 +65,57 @@
             <li class="advantages__item advantages__item--time">
               <h2 class="advantages__title">Оперативные сроки</h2>
               <p class="advantages__description">Усовершенствованная логистическая система позволяет нам просчитывать
-                стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки</p>
+                стоимость, производить и&nbsp;доставлять заказы плат и&nbsp;комплектующих в&nbsp;самые короткие сроки
+              </p>
             </li>
             <li class="advantages__item advantages__item--people">
               <h2 class="advantages__title">Крупные поставщики</h2>
               <p class="advantages__description">Нашими поставщиками являются такие крупные мировые компании как: OSRAM,
-                CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспечивает хорошее качество нашей
+                CREE, HOLGLITRONIC, REFOND. Сотрудничество с&nbsp;такими компаниями обеспечивает хорошее качество нашей
                 продукции.</p>
             </li>
             <li class="advantages__item advantages__item--confidential">
               <h2 class="advantages__title">Полная конфиденциальность</h2>
-              <p class="advantages__description">По желанию клиента мы обеспечиваем полную конфиденциальность.</p>
+              <p class="advantages__description">По&nbsp;желанию клиента мы&nbsp;обеспечиваем полную конфиденциальность.
+              </p>
             </li>
             <li class="advantages__item advantages__item--price">
               <h2 class="advantages__title">Персонализация стоимости</h2>
-              <p class="advantages__description">Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы
-                установить ту цену, которая Вас устраивает.</p>
+              <p class="advantages__description">Мы&nbsp;подбираем определенную фабрику, поставщиков, вид доставки,
+                чтобы
+                установить ту&nbsp;цену, которая Вас устраивает.</p>
             </li>
           </ul>
         </article>
 
         <article class="about">
           <div class="about__container">
-            <h3 class="about__title">О компании</h3>
-            <p class="about__description">Мы поставляем электронные комплектующие, производим печатные платы и
-              предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.<br>
-              Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND.
-              Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог
+            <h3 class="about__title">О&nbsp;компании</h3>
+            <p class="about__description about__description--desktop">Мы&nbsp;поставляем электронные комплектующие, производим печатные платы и
+              предоставляем мировые технологии с&nbsp;1997&nbsp;года. Выполняем срочные заказы и&nbsp;пилотные образцы
+              до&nbsp;10&nbsp;дней.<br>
+              Наши поставщики&nbsp;&mdash; мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC,
+              REFOND.
+              Печатные платы и&nbsp;комплектующие Service Devices применяются на&nbsp;предприятиях Российских Железных
+              Дорог
               (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие
               Производители светотехники России.
             </p>
+            <p class="about__description about__description--mobile">Мы&nbsp;поставляем электронные комплектующие, производим печатные платы и
+              предоставляем мировые технологии с&nbsp;1997&nbsp;года. Выполняем срочные заказы и&nbsp;пилотные образцы
+              до&nbsp;10&nbsp;дней.<br>
+              Наши поставщики&nbsp;&mdash; мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC,
+              REFOND.
+            </p>
             <p class="about__description about__description--additional is-closed" data-target="additional-info">Smart
-              Device - это команда профессионалов. Через нас прошло более 1 000 000 клиентов, 70% из которых продолжают
-              сотрудничество по сей день. На данный момент насчитывается более 14 офисов по всей стране и 20 городов
+              Device&nbsp;&mdash; это команда профессионалов. Через нас прошло более 1&nbsp;000&nbsp;000&nbsp;клиентов,
+              70% из&nbsp;которых продолжают
+              сотрудничество по&nbsp;сей день. На&nbsp;данный момент насчитывается более 14&nbsp;офисов по&nbsp;всей
+              стране и&nbsp;20&nbsp;городов
               присутствия.
-              Мы стремимся к постоянному развитию и повышению уровня качества продукции, производимой внутри компании.
-              Использование инновационных технологий помогает экономить деньги и время наших клиентов</p>
+              Мы&nbsp;стремимся к&nbsp;постоянному развитию и&nbsp;повышению уровня качества продукции, производимой
+              внутри компании.
+              Использование инновационных технологий помогает экономить деньги и&nbsp;время наших клиентов</p>
             <button class="about__more about__more--open is-active" type="button"
               data-action="open-more">Подробнее</button>
             <button class="about__more about__more--close is-closed" type="button"
@@ -107,50 +126,60 @@
 
       <article class="services">
         <div class="services__container">
-          <h3 class="services__title services__title--desktop">Smart Device предлагает следующие товары и услуги</h3>
-          <h4 class="services__title services__title--mobile">Товары и услуги Smart Device</h4>
+          <h3 class="services__title services__title--desktop">Smart Device предлагает следующие товары и&nbsp;услуги
+          </h3>
+          <h3 class="services__title services__title--mobile">Товары и&nbsp;услуги Smart Device</h3>
           <ul class="services__list">
             <li class="services__item services__item--production">
               <a class="services__link" href="#">
-                <h5 class="services__service-title">Производство печатных плат</h5>
+                <h4 class="services__service-title">Производство печатных плат</h4>
                 <picture>
-                  <source type="image/webp" media="(max-width: 767px)" srcset="img/production-mobile.webp 1x, img/production-mobile@2x.webp 2x">
-                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/production-tablet.webp 1x, img/production-tablet@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="img/production-mobile.webp 1x, img/production-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1023px)"
+                    srcset="img/production-tablet.webp 1x, img/production-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="img/production-desktop.webp 1x, img/production-desktop@2x.webp 2x">
-                  <source media="(max-width: 767px)" srcset="img/production-mobile.jpg 1x, img/production-mobile@2x.jpg 2x">
-                  <source media="(max-width: 1023px)" srcset="img/production-tablet.jpg 1x, img/production-tablet@2x.jpg 2x">
-                <img class="services__image" src="img/production-desktop.jpg" srcset="img/production-desktop@2x.jpg 2x"
-                  alt="Производство печатных плат.">
+                  <source media="(max-width: 767px)"
+                    srcset="img/production-mobile.jpg 1x, img/production-mobile@2x.jpg 2x">
+                  <source media="(max-width: 1023px)"
+                    srcset="img/production-tablet.jpg 1x, img/production-tablet@2x.jpg 2x">
+                  <img class="services__image" src="img/production-desktop.jpg"
+                    srcset="img/production-desktop@2x.jpg 2x" alt="Производство печатных плат.">
                 </picture>
               </a>
             </li>
 
             <li class="services__item services__item--montage">
               <a class="services__link" href="#">
-                <h5 class="services__service-title">Монтаж печатных плат</h5>
+                <h4 class="services__service-title">Монтаж печатных плат</h4>
                 <picture>
-                  <source type="image/webp" media="(min-width: 1024px)" srcset="img/montage-desktop.webp 1x, img/montage-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/montage-tablet.webp 1x, img/montage-tablet@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 1024px)"
+                    srcset="img/montage-desktop.webp 1x, img/montage-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/montage-tablet.webp 1x, img/montage-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="img/montage-mobile.webp 1x, img/montage-mobile@2x.webp 2x">
-                  <source media="(min-width: 1024px)" srcset="img/montage-desktop.jpg 1x, img/montage-desktop@2x.jpg 2x">
+                  <source media="(min-width: 1024px)"
+                    srcset="img/montage-desktop.jpg 1x, img/montage-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/montage-tablet.jpg 1x, img/montage-tablet@2x.jpg 2x">
-                <img class="services__image" src="img/montage-mobile.jpg" srcset="img/montage-mobile@2x.jpg 2x"
-                  alt="Монтаж печатных плат.">
+                  <img class="services__image" src="img/montage-mobile.jpg" srcset="img/montage-mobile@2x.jpg 2x"
+                    alt="Монтаж печатных плат.">
                 </picture>
               </a>
             </li>
 
             <li class="services__item services__item--lights">
               <a class="services__link" href="#">
-                <h5 class="services__service-title">Комплектующие для светотехники</h5>
+                <h4 class="services__service-title">Комплектующие для светотехники</h4>
                 <picture>
-                  <source type="image/webp" media="(min-width: 1024px)" srcset="img/lights-desktop.webp 1x, img/lights-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/lights-tablet.webp 1x, img/lights-tablet@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 1024px)"
+                    srcset="img/lights-desktop.webp 1x, img/lights-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/lights-tablet.webp 1x, img/lights-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="img/lights-mobile.webp 1x, img/lights-mobile@2x.webp 2x">
                   <source media="(min-width: 1024px)" srcset="img/lights-desktop.jpg 1x, img/lights-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/lights-tablet.jpg 1x, img/lights-tablet@2x.jpg 2x">
-                <img class="services__image" src="img/lights-mobile.jpg" srcset="img/lights-mobile@2x.jpg 2x"
-                  alt="Комплектующие для светотехники.">
+                  <img class="services__image" src="img/lights-mobile.jpg" srcset="img/lights-mobile@2x.jpg 2x"
+                    alt="Комплектующие для светотехники.">
                 </picture>
               </a>
             </li>
@@ -161,8 +190,8 @@
       <article class="form" data-target="form">
         <div class="form__container" data-form-validate>
           <form action="https://echo.htmlacademy.ru/" method="post" autocomplete="off">
-            <h3 class="form__title">Остались вопросы? Задайте их нам!</h3>
-            <p class="form__description">Мы проконсультируем Вас бесплатно</p>
+            <h3 class="form__title">Остались вопросы? Задайте их&nbsp;нам!</h3>
+            <p class="form__description">Мы&nbsp;проконсультируем Вас бесплатно</p>
             <div class="form__wrapper">
               <div class="form__label--name form__label">
                 <label data-on-input-validate data-required>
@@ -188,7 +217,7 @@
                   <input class="visually-hidden" type="checkbox" name="policy" value="policy" id="policy" checked
                     required>
                   <span class="form__check"></span>
-                  <span class="form__policy-text">Я согласен на обработку персональных данных</span>
+                  <span class="form__policy-text">Я&nbsp;согласен на&nbsp;обработку персональных данных</span>
                 </label>
               </div>
             </div>
@@ -232,10 +261,10 @@
           </ul>
         </div>
         <div class="footer-nav footer-nav--main is-closed">
-          <h6 class="footer-nav__title footer-nav__title--main">Разделы сайта</h6>
+          <h4 class="footer-nav__title footer-nav__title--main">Разделы сайта</h4>
           <ul class="footer-nav__list footer-nav__list--main is-closed">
             <li class="footer-nav__item">
-              <a class="footer-nav__link" href="#">О Компании</a>
+              <a class="footer-nav__link" href="#">О&nbsp;Компании</a>
             </li>
             <li class="footer-nav__item">
               <a class="footer-nav__link" href="#">Продукты</a>
@@ -258,7 +287,7 @@
           </ul>
         </div>
         <div class="footer-nav footer-nav--contacts is-closed">
-          <h6 class="footer-nav__title footer-nav__title--contacts">Наш офис</h6>
+          <h4 class="footer-nav__title footer-nav__title--contacts">Наш офис</h4>
           <ul class="footer-nav__list footer-nav__list--contacts is-closed">
             <li class="footer-nav__item">
               <span class="footer-nav__link">г. Мытищи, Олимпийский проспект, д.10</span>
@@ -284,7 +313,7 @@
       <button class="modal__close" type="button" data-action="close-modal"></button>
       <div class="modal__content">
         <h2 class="modal__title">Закажите звонок</h2>
-        <p class="modal__description">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+        <p class="modal__description">Оставьте контакты, мы&nbsp;проконсультируем вас бесплатно в&nbsp;удобное время</p>
         <div data-form-validate>
           <form action="https://echo.htmlacademy.ru/" method="post" autocomplete="off">
             <div class="modal__label modal__label--name">
@@ -311,7 +340,7 @@
                 <input class="visually-hidden" type="checkbox" name="policy" value="policy" id="policy-modal" checked
                   required>
                 <span class="modal__check"></span>
-                <span class="modal__policy-text">Я согласен на обработку персональных данных</span>
+                <span class="modal__policy-text">Я&nbsp;согласен на&nbsp;обработку персональных данных</span>
               </label>
             </div>
           </form>

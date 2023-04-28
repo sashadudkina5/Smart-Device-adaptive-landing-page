@@ -43,11 +43,14 @@ body {
 
 main {
   flex: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 a {
   color: $color-default-black;
   text-decoration: none;
+  cursor: pointer;
 }
 
 img,
@@ -137,4 +140,9 @@ button,
 [type="reset"],
 [type="submit"] {
   appearance: none;
+}
+
+button {
+  cursor: pointer;
+  user-select: none;
 }

@@ -17,7 +17,7 @@
     padding-left: 50px;
     padding-right: 45px;
     padding-bottom: 65px;
-    row-gap: 35px;
+    row-gap: 40px;
     grid-template-rows: min-content 1fr;
     grid-template-columns: 1fr 1fr;
   }
@@ -25,10 +25,14 @@
   @media (max-width: $vp-767) {
     row-gap: 30px;
     display: block;
+    padding-top: 35px;
+    padding-left: 25px;
   }
 }
 
 .main-footer__social {
+  user-select: none;
+
   @media (max-width: $vp-1023) {
     margin-right: 0;
     grid-column-end: -1;

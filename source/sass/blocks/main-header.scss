@@ -25,12 +25,13 @@
   }
 
   @media (max-width: $vp-767) {
-    padding: 15px 10px 20px 26px;
+    padding: 15px 35px 20px 26px;
   }
 }
 
 .main-header__logo {
   flex-grow: 1;
+  user-select: none;
 
   @media (max-width: $vp-1023) {
     margin-left: 0;

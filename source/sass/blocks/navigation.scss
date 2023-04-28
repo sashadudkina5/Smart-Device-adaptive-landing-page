@@ -3,6 +3,7 @@
   flex-wrap: wrap;
   column-gap: 100px;
   row-gap: 25px;
+  user-select: none;
 
   @media (max-width: $vp-1023) {
     column-gap: 20px;
@@ -19,7 +20,12 @@
     width: 40px;
     height: 40px;
     padding: 10px;
+    padding-top: 5px;
     position: static;
+  }
+
+  @media (max-width: $vp-767) {
+    padding-top: 10px;
   }
 
   &:hover .navigation__item-naming,

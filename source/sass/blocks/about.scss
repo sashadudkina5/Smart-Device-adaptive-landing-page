@@ -27,8 +27,8 @@
   @media (max-width: $vp-1023) {
     max-width: 674px;
     padding: 0;
-    padding-left: 180px;
-    margin-bottom: 80px;
+    padding-left: 176px;
+    margin-bottom: 88px;
   }
 
   @media (max-width: $vp-767) {
@@ -36,6 +36,7 @@
     padding: 0;
     padding-left: 25px;
     padding-right: 25px;
+    margin-bottom: 77px;
   }
 }
 
@@ -61,9 +62,22 @@
   color: $main-theme-color;
   margin-bottom: 20px;
 
+  &--desktop {
+    @media (max-width: $vp-767) {
+      display: none;
+    }
+  }
+
+  &--mobile {
+    @media (min-width: $vp-768) {
+      display: none;
+    }
+  }
+
   @media (max-width: $vp-767) {
     font-size: 14px;
     line-height: 19px;
+    margin-bottom: 29px;
   }
 
   &--additional.is-closed {
@@ -77,7 +91,7 @@
 
 .about__more {
   display: block;
-  padding: 14px 40px;
+  padding: 14px 55px;
   border: 1px solid $decoration-color;
   border-radius: 3px;
   font-weight: 700;
@@ -89,6 +103,10 @@
   text-align: center;
   width: max-content;
   background-color: transparent;
+
+  @media (max-width: $vp-767) {
+    padding: 10px 43px;
+  }
 
   &:hover,
   &:focus {
