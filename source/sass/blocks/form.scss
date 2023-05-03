@@ -1,6 +1,6 @@
 .form {
   width: 100%;
-  background-image: url("../../img/airplane.png"), $form-background-gradient;
+  background-image: url("../img/airplane.png"), $form-background-gradient;
   padding-right: 360px;
   padding-top: 170px;
   padding-bottom: 250px;
@@ -161,7 +161,7 @@
 }
 
 .form__label--policy input[type="checkbox"]:checked + .form__check {
-  background-image: url("../../img/svg/check.svg");
+  background-image: url("../img/svg/check.svg");
 }
 
 .form__send {

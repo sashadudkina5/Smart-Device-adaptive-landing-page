@@ -1,6 +1,6 @@
 .promo {
   width: 100%;
-  background-image: url("../../img/promo-background.webp");
+  background-image: url("../img/promo-background.webp");
   background-color: $main-theme-color;
   background-repeat: no-repeat;
   background-size: cover;
@@ -10,7 +10,7 @@
   margin-top: -20px;
 
   @media (min-resolution: $retina-dppx) {
-    background-image: url("../../img/promo-background@2x.webp");
+    background-image: url("../img/promo-background@2x.webp");
   }
 
   @media (max-width: $vp-1023) {

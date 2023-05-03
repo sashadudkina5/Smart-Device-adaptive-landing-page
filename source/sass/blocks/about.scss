@@ -10,13 +10,13 @@
   position: relative;
 
   &::after {
-    content: url("../../img/year.png");
+    content: url("../img/year.png");
     position: absolute;
     left: 0;
     top: 0;
 
     @media (min-resolution: $retina-dppx) {
-      content: url("../../img/year@2x.png");
+      content: url("../img/year@2x.png");
     }
 
     @media (max-width: $vp-767) {
