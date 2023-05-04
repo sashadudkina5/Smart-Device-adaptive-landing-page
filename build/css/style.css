@@ -389,7 +389,7 @@ template {
   font-weight: 400;
   font-family: "PT Mono";
   font-display: swap;
-  src: url("../../fonts/PTMono-Regular.woff2") format("woff2");
+  src: url("../fonts/PTMono-Regular.woff2") format("woff2");
 }
 
 @font-face {
@@ -397,7 +397,7 @@ template {
   font-weight: 400;
   font-family: "PT Mono";
   font-display: swap;
-  src: url("../../fonts/PTMono-Regular.woff") format("woff");
+  src: url("../fonts/PTMono-Regular.woff") format("woff");
 }
 
 @font-face {
@@ -405,7 +405,7 @@ template {
   font-weight: 400;
   font-family: "Roboto Condensed";
   font-display: swap;
-  src: url("../../fonts/RobotoCondensed-Regular.woff") format("woff");
+  src: url("../fonts/RobotoCondensed-Regular.woff") format("woff");
 }
 
 @font-face {
@@ -413,7 +413,7 @@ template {
   font-weight: 400;
   font-family: "Roboto Condensed";
   font-display: swap;
-  src: url("../../fonts/RobotoCondensed-Regular.woff2") format("woff2");
+  src: url("../fonts/RobotoCondensed-Regular.woff2") format("woff2");
 }
 
 @font-face {
@@ -421,7 +421,7 @@ template {
   font-weight: 700;
   font-family: "Roboto Condensed";
   font-display: swap;
-  src: url("../../fonts/RobotoCondensed-Bold.woff2") format("woff2");
+  src: url("../fonts/RobotoCondensed-Bold.woff2") format("woff2");
 }
 
 @font-face {
@@ -429,7 +429,7 @@ template {
   font-weight: 700;
   font-family: "Roboto Condensed";
   font-display: swap;
-  src: url("../../fonts/RobotoCondensed-Bold.woff") format("woff");
+  src: url("../fonts/RobotoCondensed-Bold.woff") format("woff");
 }
 
 *,
@@ -1686,7 +1686,7 @@ button {
 
 .promo {
   width: 100%;
-  background-image: url("../../img/promo-background.webp");
+  background-image: url("../img/promo-background.webp");
   background-color: #041827;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1797,35 +1797,35 @@ button {
 }
 
 .advantages__item--price {
-  background-image: url("../../img/svg/advantages-price.svg");
+  background-image: url("../img/svg/advantages-price.svg");
 }
 
 .advantages__item--price:hover {
-  background-image: url("../../img/svg/advantages-price-hover.svg");
+  background-image: url("../img/svg/advantages-price-hover.svg");
 }
 
 .advantages__item--confidential {
-  background-image: url("../../img/svg/advantages-confidential.svg");
+  background-image: url("../img/svg/advantages-confidential.svg");
 }
 
 .advantages__item--confidential:hover {
-  background-image: url("../../img/svg/advantages-confidential-hover.svg");
+  background-image: url("../img/svg/advantages-confidential-hover.svg");
 }
 
 .advantages__item--people {
-  background-image: url("../../img/svg/advantages-people.svg");
+  background-image: url("../img/svg/advantages-people.svg");
 }
 
 .advantages__item--people:hover {
-  background-image: url("../../img/svg/advantages-people-hover.svg");
+  background-image: url("../img/svg/advantages-people-hover.svg");
 }
 
 .advantages__item--time {
-  background-image: url("../../img/svg/advantages-time.svg");
+  background-image: url("../img/svg/advantages-time.svg");
 }
 
 .advantages__item--time:hover {
-  background-image: url("../../img/svg/advantages-time-hover.svg");
+  background-image: url("../img/svg/advantages-time-hover.svg");
 }
 
 .advantages__title {
@@ -1859,7 +1859,7 @@ button {
 }
 
 .about__container::after {
-  content: url("../../img/year.png");
+  content: url("../img/year.png");
   position: absolute;
   left: 0;
   top: 0;
@@ -2051,8 +2051,8 @@ button {
 
 .form {
   width: 100%;
-  background-image: url("../../img/airplane.png"), -o-linear-gradient(308deg, rgb(4, 101, 147) 35%, #00b3ff 35%);
-  background-image: url("../../img/airplane.png"), linear-gradient(142deg, rgb(4, 101, 147) 35%, #00b3ff 35%);
+  background-image: url("../img/airplane.png"), -o-linear-gradient(308deg, rgb(4, 101, 147) 35%, #00b3ff 35%);
+  background-image: url("../img/airplane.png"), linear-gradient(142deg, rgb(4, 101, 147) 35%, #00b3ff 35%);
   padding-right: 360px;
   padding-top: 170px;
   padding-bottom: 250px;
@@ -2193,7 +2193,7 @@ button {
 }
 
 .form__label--policy input[type=checkbox]:checked + .form__check {
-  background-image: url("../../img/svg/check.svg");
+  background-image: url("../img/svg/check.svg");
 }
 
 .form__send {
@@ -2890,10 +2890,10 @@ button {
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 1.5dppx) {
   .promo {
-    background-image: url("../../img/promo-background@2x.webp");
+    background-image: url("../img/promo-background@2x.webp");
   }
 
   .about__container::after {
-    content: url("../../img/year@2x.png");
+    content: url("../img/year@2x.png");
   }
 }
