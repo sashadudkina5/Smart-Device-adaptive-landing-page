@@ -1851,17 +1851,15 @@ button {
 }
 
 .about__container {
-  max-width: 1220px;
-  padding: 5px 80px 20px 250px;
+  padding: 5px 180px 20px 300px;
   margin: 0 auto;
-  margin-bottom: 100px;
+  margin-bottom: 150px;
   position: relative;
 }
 
 .about__container::after {
   content: url("../img/year.png");
   position: absolute;
-  left: 0;
   top: 0;
 }
 
@@ -1881,14 +1879,20 @@ button {
   line-height: 22px;
   color: #041827;
   margin-bottom: 20px;
+  -webkit-transition: max-height 0.5s ease, opacity 0.5s ease;
+  -o-transition: max-height 0.5s ease, opacity 0.5s ease;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
 }
 
 .about__description--additional.is-closed {
-  display: none;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
 }
 
 .about__description--additional.is-active {
-  display: inline-block;
+  max-height: 500px;
+  opacity: 1;
 }
 
 .about__more {
@@ -2278,8 +2282,18 @@ button {
 */
 
 @media (min-width: 768px) {
+  .about__container::after {
+    left: 0;
+  }
+
   .about__description--mobile {
     display: none;
+  }
+}
+
+@media (min-width: 1023px) {
+  .about__container::after {
+    left: 100px;
   }
 }
 
@@ -2453,10 +2467,10 @@ button {
   }
 
   .about__container {
-    max-width: 674px;
     padding: 0;
     padding-left: 176px;
     margin-bottom: 88px;
+    padding-right: 50px;
   }
 
   .services {

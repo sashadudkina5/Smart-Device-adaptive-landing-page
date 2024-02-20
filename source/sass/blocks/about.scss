@@ -3,17 +3,23 @@
 }
 
 .about__container {
-  max-width: 1220px;
-  padding: 5px 80px 20px 250px;
+  padding: 5px 180px 20px 300px;
   margin: 0 auto;
-  margin-bottom: 100px;
+  margin-bottom: 150px;
   position: relative;
 
   &::after {
     content: url("../img/year.png");
     position: absolute;
-    left: 0;
     top: 0;
+
+    @media (min-width: $vp-1023) {
+      left: 100px;
+    }
+
+    @media (min-width: $vp-768) {
+      left: 0;
+    }
 
     @media (min-resolution: $retina-dppx) {
       content: url("../img/year@2x.png");
@@ -25,10 +31,10 @@
   }
 
   @media (max-width: $vp-1023) {
-    max-width: 674px;
     padding: 0;
     padding-left: 176px;
     margin-bottom: 88px;
+    padding-right: 50px;
   }
 
   @media (max-width: $vp-767) {
@@ -61,6 +67,7 @@
   line-height: 22px;
   color: $main-theme-color;
   margin-bottom: 20px;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
 
   &--desktop {
     @media (max-width: $vp-767) {
@@ -81,11 +88,14 @@
   }
 
   &--additional.is-closed {
-    display: none;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
   }
 
   &--additional.is-active {
-    display: inline-block;
+    max-height: 500px;
+    opacity: 1;
   }
 }
 

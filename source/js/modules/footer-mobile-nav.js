@@ -1,3 +1,6 @@
+// footer mobile navigation functionality
+
+
 const footerNavContainers = document.getElementsByClassName('footer-nav');
 
 const hideLists = (containers, current) => {

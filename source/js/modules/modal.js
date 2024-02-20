@@ -1,3 +1,5 @@
+// modal functionality
+
 const requestCallButton = document.querySelector('[data-action="request-call-modal"]');
 const modalWindow = document.querySelector('[data-modal="feedback"]');
 const closeModalButton = document.querySelector('[data-action="close-modal"]');

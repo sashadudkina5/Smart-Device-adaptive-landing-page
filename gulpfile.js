@@ -5,6 +5,11 @@ import styles from './gulp/compileStyles.mjs';
 import { copy, copyImages, copySvg } from './gulp/copyAssets.mjs';
 import js from './gulp/compileScripts.mjs';
 import {optimizeSvg, sprite, createWebp, optimizePng, optimizeJpg} from './gulp/optimizeImages.mjs';
+import ghpages from "gh-pages";
+
+// GitHub
+
+ghpages.publish('build', function(err) {});
 
 const server = browserSync.create();
 const streamStyles = () => styles().pipe(server.stream());
