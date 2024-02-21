@@ -735,6 +735,7 @@ button {
   height: 100%;
   background-color: rgba(3, 16, 27, 0.7);
   z-index: 10;
+  overflow-y: auto;
 }
 
 .modal__container {
@@ -746,6 +747,7 @@ button {
   background-color: #00b3ff;
   border-radius: 3px;
   width: 500px;
+  max-height: 610px;
 }
 
 .modal__content form {
@@ -1637,11 +1639,14 @@ button {
   flex-direction: column;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-transition: opacity 0.7s ease-out, -webkit-transform 0.7s ease-out;
-  transition: opacity 0.7s ease-out, -webkit-transform 0.7s ease-out;
-  -o-transition: opacity 0.7s ease-out, transform 0.7s ease-out;
-  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
-  transition: opacity 0.7s ease-out, transform 0.7s ease-out, -webkit-transform 0.7s ease-out;
+  -webkit-transition: opacity 0.5s ease, -webkit-transform 0.5s ease;
+  transition: opacity 0.5s ease, -webkit-transform 0.5s ease;
+  -o-transition: transform 0.5s ease, opacity 0.5s ease;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  transition: transform 0.5s ease, opacity 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-transform-origin: top;
+  -ms-transform-origin: top;
+  transform-origin: top;
 }
 
 .footer-nav--contacts {
@@ -2558,6 +2563,12 @@ button {
 
   .footer-nav.is-closed .footer-nav__list {
     position: relative;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    -webkit-transform: scaleY(0);
+    -ms-transform: scaleY(0);
+    transform: scaleY(0);
   }
 
   .footer-nav.is-closed .footer-nav__list::after {
@@ -2585,6 +2596,11 @@ button {
 
   .footer-nav.is-active .footer-nav__list {
     position: relative;
+    opacity: 1;
+    height: auto;
+    -webkit-transform: scaleY(1);
+    -ms-transform: scaleY(1);
+    transform: scaleY(1);
   }
 
   .footer-nav.is-active .footer-nav__list::after {
