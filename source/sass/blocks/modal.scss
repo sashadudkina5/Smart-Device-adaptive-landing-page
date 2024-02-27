@@ -16,6 +16,7 @@
     height: 100%;
     background-color: $modal-background;
     z-index: 10;
+    overflow-y: auto;
   }
 }
 
@@ -28,6 +29,7 @@
   background-color: $form-color;
   border-radius: 3px;
   width: 500px;
+  max-height: 610px;
 }
 
 .modal__content form {
