@@ -1,17 +1,36 @@
-## Краткая инструкция по работе
-Для начала работы у вас должент быть установлен **Node.js**
+# Smart Device Adaptive Landing Page
 
-### Основные команды для работы
-- Установка - `npm i`
-- Запуск локального сервера без минификаций - `npm start`
-- Запуск локального сервера c минификациями, <br>
-данный вариант не используется в разработке, <br>
-он нужен только для тестов производительности <br>
-на локальном хосте  - `npm run dev`
-- Сборка проекта, минификация скриптов <br>
-и оптимизация изображений перед деплоем на прод - `npm run build`
-- Запуск тестирования на соответствия кодгайдам - `npm test`
-- Создание webp изображений в директории source - `npm run webp`
+Smart Device adaptive landing page for a PCB production company. Developed using HTML, SCSS, and JavaScript.
 
-### Вся разработка ведётся в директории `source`
-### Итоговый код попадает в директорию `build`
+## Technologies Used
+
+HTML, SCSS, and JavaScript. 
+The project structure, Gulp functionality and some JavaScript utilities and templates are based on the [liga-accelerator-template](https://github.com/sashadudkina5/liga-accelerator-template). The design elements were provided via Figma templates by [HTML Academy](https://htmlacademy.org/).
+
+## Features
+
+- **Responsive Layout**: Utilizing a desktop-first approach, the landing page is optimized for desktop users while maintaining responsiveness across various screen sizes.
+- **Interactive Elements**: Implemented with JavaScript - modal window, mobile footer navigation, autoscrolling and toggles.
+- **Optimized Workflow**: Gulp functionality automates tasks such as image optimization, file minification, and more, streamlining the development process.
+
+## Project Website
+
+To view the Smart Device adaptive landing page, visit the following link: [Smart Device Landing Page](https://sashadudkina5.github.io/Smart-Device-adaptive-landing-page/)
+
+## Brief Work Instructions
+To get started, you must have **Node.js** installed on your system.
+
+### Main Commands for Work
+- Installation - `npm i`
+- Start local server without minification - `npm start`
+- Start local server with minification, <br>
+this option is not used in development, <br>
+it is only needed for performance tests <br>
+on the local host - `npm run dev`
+- Build the project, script minification <br>
+and image optimization before deploying to production - `npm run build`
+- Run code linting tests - `npm test`
+- Create webp images in the source directory - `npm run webp`
+
+### All development is done in the `source` directory
+### The final code is placed in the `build` directory
