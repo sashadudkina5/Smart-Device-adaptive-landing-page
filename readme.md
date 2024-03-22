@@ -15,7 +15,7 @@ The project structure, Gulp functionality and some JavaScript utilities and temp
 
 ## Project Website
 
-To view the Smart Device adaptive landing page, visit the following link: [Smart Device Landing Page](https://sashadudkina5.github.io/Smart-Device-adaptive-landing-page/)
+To view the Smart Device adaptive landing page, visit the following link: [Smart Device Landing Page](https://sashadudkina5.github.io/SmartDevice_Adaptive-LandingPage/)
 
 ## Brief Work Instructions
 To get started, you must have **Node.js** installed on your system.
